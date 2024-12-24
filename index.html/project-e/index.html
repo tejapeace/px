@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 1</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script> 
+    <style>
+        .input {
+            width: 300px;
+            padding: 10px;
+            font-size: 16px;
+        }
+        .multiple-text {
+            margin-top: 10px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo-section">
+            <img src="https://res.cloudinary.com/dx12miqoa/image/upload/v1734371514/WhatsApp_Image_2024-10-14_at_3.39.03_PM_leoc2h.jpg">
+        </div>
+       
+        <div class="search-bar-section">
+            <div class="search-icon">
+                <i class="fa-duotone fa-solid fa-magnifying-glass"></i>
+                <div class="tooltip">Search</div>
+            </div>
+            <input type="text" class="input" id="searchBox" placeholder="Search product here...">
+            <script>
+                document.addEventListener('DOMContentLoaded', () => {
+                    const typed = new Typed('#searchBox', {
+                        strings: ['Watch', 'Sneakers', 'Hand-bags','Caps','Winter sales','Super offers'],
+                        typeSpeed: 90,
+                        backSpeed: 90,
+                        backDelay: 3000,
+                        loop: true
+                    });
+                });
+            </script>
+        </div>
+        <div class="login-section">
+            <button class="login-btn" onclick="toggleLogin()">Login</button>
+        </div>
+    </header>
+
+    <div id="login-container" class="login-container hidden">
+        <div class="login-form">
+            <h2>Login</h2>
+            <form action="#">
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter your password" required>
+                </div>
+                <button type="submit" class="login-btn">Login</button>
+                <p class="signup-link">Don't have an account? <a href="#">Sign up</a></p>
+            </form>
+        </div>
+    </div>
+    
+        <div class="banner-section">
+            <div class="banner-container">
+                <img src="https://res.cloudinary.com/dx12miqoa/image/upload/v1734083274/WhatsApp_Image_2024-12-13_at_3.10.49_PM_n9jw8c.jpg">
+                <img src="https://res.cloudinary.com/dx12miqoa/image/upload/v1734198940/WhatsApp_Image_2024-12-14_at_11.25.10_PM_lnsihp.jpg">
+                <img src="https://res.cloudinary.com/dx12miqoa/image/upload/v1734200208/WhatsApp_Image_2024-12-14_at_11.45.59_PM_uedcs1.jpg">
+            </div>   
+
+            <button class="arrow arrow-left" id="prevBtn">&#10094</button>
+            <button class="arrow arrow-right" id="nextBtn">&#10095</button>
+        </div>
+        <div class="category-section">
+            <ul>
+                <li>
+                    <img src="https://res.cloudinary.com/dx12miqoa/image/upload/v1734187936/20241214_180917_opshtq.png">
+                </li>
+                <li>
+                    <img src="https://res.cloudinary.com/dx12miqoa/image/upload/v1734188571/20241214_181845_xp9juh.png">
+                </li>
+                <li>
+                    <img src="https://res.cloudinary.com/dx12miqoa/image/upload/v1734188660/20241214_181734_jbnwmc.png">
+                </li>
+                <li>
+                    <img src="https://res.cloudinary.com/dx12miqoa/image/upload/v1734188856/20241214_182205_degsrr.png">
+                </li>
+                <li> 
+                    <img src="https://res.cloudinary.com/dx12miqoa/image/upload/v1734195130/20241214_205219_1_p12qge.png">
+                </li>
+                <li>
+                    <img src="https://res.cloudinary.com/dx12miqoa/image/upload/v1734195250/20241214_215710_dzwfqo.png">
+                </li>
+                <li>
+                    <img src="https://res.cloudinary.com/dx12miqoa/image/upload/v1734195335/20241214_221535_r9mavc.png">
+                </li>   
+            </ul>
+        </div>
+
+        <div class="logo1-section">
+            <img src="https://res.cloudinary.com/dx12miqoa/image/upload/v1734859266/20241222_140811_ezuy8j.png">
+            <img src="https://res.cloudinary.com/dx12miqoa/image/upload/v1734859878/20241222_140502_ux7evu.png">
+        </div>
+
+       
+
+        <div class="category2-section">
+            <ul>
+                <li>
+                    <img src="https://res.cloudinary.com/dx12miqoa/image/upload/v1734187936/20241214_180917_opshtq.png">
+                </li>
+                <li>
+                    <img src="https://res.cloudinary.com/dx12miqoa/image/upload/v1734188571/20241214_181845_xp9juh.png">
+                </li>
+                <li>
+                    <img src="https://res.cloudinary.com/dx12miqoa/image/upload/v1734188660/20241214_181734_jbnwmc.png">
+                </li>
+                <li>
+                    <img src="https://res.cloudinary.com/dx12miqoa/image/upload/v1734188856/20241214_182205_degsrr.png">
+                </li>
+                <li> 
+                    <img src="https://res.cloudinary.com/dx12miqoa/image/upload/v1734195130/20241214_205219_1_p12qge.png">
+                </li>
+                <li>
+                    <img src="https://res.cloudinary.com/dx12miqoa/image/upload/v1734195250/20241214_215710_dzwfqo.png">
+                </li>
+                <li>
+                    <img src="https://res.cloudinary.com/dx12miqoa/image/upload/v1734195335/20241214_221535_r9mavc.png">
+                </li>
+                    
+            </ul>
+        </div>
+
+
+        
+   
+       
+
+        <div class="arrival-section"></div>
+        <div class="discount-section"></div>
+        <div class="footer"></div>
+    
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
